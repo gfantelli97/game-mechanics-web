@@ -1,0 +1,119 @@
+:root {
+    /*Paleta Principal*/
+    --dark-primary: #455A64;
+    --primary: #607D8B;
+    --light-primary: #CFD8DC;
+    --accent: #FF5722;
+
+    /*Paleta Texto*/
+    --text-light: #FFFFFF;
+    --text-primary: #212121;
+    --text-secondary: #757575;
+
+    /* Otros */
+    --divider: #BDBDBD;
+
+    /*Tipografías*/
+    --font-title: 'Montserrat', sans-serif;
+    --font-body: 'Nunito Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--light-primary);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-title);
+    color: var(--primary);
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+    color: var(--text-secondary);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    color: var(--text-light);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 6px;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent);
+}
+.logo-container h1{
+    font-family: var(--font-title);
+    color: var(--text-light);
+    font-size: 1.8rem;
+
+}
+
+.main-nav ul{
+    background-color: var(--dark-primary);
+    border: #FF5722;
+    padding: 1rem 1rem;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main nav a{
+    color: var(--text-light);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--accent);
+}
+
+.user-profile img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    transition: 0.2s ease-in-out;
+}
+
+.user-profile img:hover {
+    transform: scale(1.1);
+}
