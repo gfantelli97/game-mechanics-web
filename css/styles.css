@@ -26,7 +26,7 @@
 html {
     scroll-behavior: smooth;
 }
-
+/* Estilo cuerpo */
 body {
     background-color: var(--light-primary);
     color: var(--text-primary);
@@ -34,17 +34,19 @@ body {
     line-height: 1.6;
     min-height: 100vh;
 }
+/* Estilo tamaño títulos*/
 h1, h2, h3, h4, h5, h6{
     font-family: var(--font-title);
     color: var(--primary);
     margin-bottom: 0.5em;
 }
-
+/* Estilo Párrafos*/
 p {
     margin-bottom: 1em;
     color: var(--text-secondary);
 }
 
+/* Estilos enlaces con diseño responsive Hover */
 a {
     color: var(--accent);
     text-decoration: none;
@@ -55,6 +57,8 @@ a:hover {
     color: var(--primary);
     text-decoration: underline;
 }
+
+/*Portada Principal con Logo de Empresa y Perfil de Usuario */
 .main-header {
     background: linear-gradient(to bottom, var(--dark-primary), var(--primary));
 }
@@ -86,8 +90,6 @@ a:hover {
 
 }
 
-
-
 .user-profile img{
     width: 45px;
     height: 45px;
@@ -99,7 +101,7 @@ a:hover {
 .user-profile img:hover {
     transform: scale(1.1);
 }
-
+/* Barra de Navegación con enlaces y diseño Hover responsive */
 .main-nav{
     background-color: var(--primary);
     border-top: 2px solid var(--accent);
@@ -122,4 +124,70 @@ a:hover {
 .main-nav a:hover,
 .main-nav a.active {
     color: var(--accent);
+}
+/* Sección Principal con Último Análisis creado. Incluye Grid y Linear-Gradient */
+.featured-review {
+    background: linear-gradient(to bottom right, var(--light-primary), var(--primary));
+    border-top: 2px solid var(--accent);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1100px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px;
+}
+/* Título Principal del Análisis */
+.featured-header h2 {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    text-shadow: var(--text-secondary) 0.05rem 0.05rem;
+}
+
+.featured-header .review-meta {
+    font-size: 1rem;
+    color: var(--dark-primary);
+    margin-bottom: 1rem;
+}
+/* Grid Principal */
+.featured-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+/* Video */
+.trailer-video iframe {
+    width: 100%;
+    height: 320px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 12px;
+}
+/* Resumen- Primer párrafo */
+.resumen-review p{
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+/* Botón leer más */
+.btn-readmore{
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--text-light);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    min-width: 48px;
+    min-height: 48px;
+}
+.btn-readmore:hover,
+.btn-readmore:focus{
+    background-color: var(--primary);
+    color: var(--text-light);
+    outline: none;
+    transform: translateY(-3px);
 }
