@@ -29,6 +29,10 @@ html {
 /* Estilo cuerpo */
 body {
     background-color: var(--light-primary);
+    background-image: url('../media/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
     color: var(--text-primary);
     font-family: var(--font-body);
     line-height: 1.6;
@@ -127,7 +131,7 @@ a:hover {
 }
 /* Sección Principal con Último Análisis creado. Incluye Grid y Linear-Gradient */
 .featured-review {
-    background: linear-gradient(to bottom right, var(--light-primary), var(--primary));
+    background: linear-gradient(to bottom right, var(--primary), var(--light-primary));
     border-top: 2px solid var(--accent);
     padding: 2rem;
     margin: 2rem auto;
@@ -190,4 +194,20 @@ a:hover {
     color: var(--text-light);
     outline: none;
     transform: translateY(-3px);
+}
+
+@media (max-width: 900px) {
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.trailer-video iframe {
+    height: 250px;
+}
+.featured-review {
+    padding: 1.5rem;
+}
+
+.featured-header h2 {
+    font-size: 1.5rem;
 }
