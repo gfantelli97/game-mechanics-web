@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6{
 /* Estilo Párrafos*/
 p {
     margin-bottom: 1em;
-    color: var(--text-secondary);
+    color: var(--text-primary);
 }
 
 /* Estilos enlaces con diseño responsive Hover */
@@ -200,18 +200,17 @@ a:hover {
 .reviews-destacadas {
     display: flex;
     justify-content: center;
-    background: var(--light-primary);
     padding: 3rem 0;
 }
 
 .reviews-box {
-    border-top: 2px solid var(--accent);
+    border-bottom: 2px solid var(--accent);
     background: linear-gradient(to bottom left, var(--light-primary), var(--primary));
     border-radius: 12px;
     padding: 2rem;
     max-width: 1000px;
     width: 90%;
-    box-shadow: 0 4px 16px var(--text-secondary);
+    box-shadow: 0 -4px 12px var(--text-secondary);
     color: var(--text-light);
 }
 
@@ -317,6 +316,90 @@ a:hover {
 .footer-copy {
     font-size: 1rem;
     color: var(--text-secondary);
+}
+.full-review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+.review-content {
+    font-family: var(--font-body);
+    color: var(--text-primary);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.review-content h3{
+    font-family: var(--font-title);
+    color: var(--text-primary);
+    font-weight: 800;
+    margin-top: 1.5rem;
+}
+.full-review-box {
+    border-bottom: 2px solid var(--accent);
+    border-top: 2px solid var(--accent);
+    background: linear-gradient(to bottom , var(--light-primary), var(--primary));
+    border-radius: 12px;
+    padding: 2.5rem;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 -4px 12px var(--text-secondary);
+    box-shadow: 0 4px 12px var(--text-secondary);
+    color: var(--text-primary);
+}
+.full-review-box h2{
+    font-family: var(--font-title);
+    color: var(--text-primary);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 0.05rem 0.05rem 0.1rem var(--accent);
+}
+.review-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.score-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.score{
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 2px solid var(--accent);
+}
+.reviewer-profile {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.reviewer-profile img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    object-fit: cover;
+    transition: 0.2s ease-in-out;
+}
+.reviewer-profile img:hover{
+    transform: scale(1.05);
+}
+.reviewer-profile h1 {
+    font-family: var(--font-title);
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-shadow: 0.05 rem 0.05rem 0.1rem var(--text-light);
 }
 @media (max-width: 900px) {
     .featured-grid {
