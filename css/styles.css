@@ -138,6 +138,7 @@ a:hover {
     max-width: 1100px;
     border-radius: 12px;
     box-shadow: 0 4px 16px;
+    color: var(--text-primary);
 }
 /* Título Principal del Análisis */
 .featured-header h2 {
@@ -150,7 +151,7 @@ a:hover {
 
 .featured-header .review-meta {
     font-size: 1rem;
-    color: var(--dark-primary);
+    color: var(--text-primary);
     margin-bottom: 1rem;
 }
 /* Grid Principal */
@@ -263,6 +264,60 @@ a:hover {
     text-align: center;
 }
 
+.main-footer {
+    background-color: var(--dark-primary);
+    color: var(--text-light);
+    padding: 2rem 1rem;
+    text-align: center;
+    border-top: 2px solid var(--accent);
+}
+
+.footer-content{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover{
+    color: var(--accent);
+}
+
+.iconos-redes{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.iconos-redes img{
+    width: 36px;
+    height: 36px;
+    transition: transform 0.3s ease;
+}
+
+.iconos-redes img:hover{
+    transform: scale(1.20);
+}
+.footer-copy {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
 @media (max-width: 900px) {
     .featured-grid {
         grid-template-columns: 1fr;
@@ -277,4 +332,12 @@ a:hover {
 
 .featured-header h2 {
     font-size: 1.5rem;
+}
+@media (max-width: 600px){
+    .review-card img{
+        height: 160px;
+    }
+    .highlighted-reviews {
+        padding: 1.5rem;
+    }
 }
