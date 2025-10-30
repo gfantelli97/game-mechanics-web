@@ -423,7 +423,7 @@ a:hover {
 }
 .contact-card h2 {
     font-family: var(--font-title);
-    color: var(--primary);
+    color: var(--text-primary);
     font-size: 2rem;
     text-align: center;
     margin-bottom: 0.5rem;
@@ -447,7 +447,8 @@ a:hover {
 
 label{
     font-weight: 700px;
-    color: var(--primary);
+    color: var(--text-primary);
+    font-weight: 700;
 
 }
 
@@ -461,6 +462,7 @@ textarea {
     font-size: 1rem;
     outline: none;
     transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    resize: vertical;
 }
 
 input:focus,
