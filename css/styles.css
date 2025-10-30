@@ -145,7 +145,7 @@ a:hover {
     font-size: 2rem;
     color: var(--text-primary);
     margin-bottom: 0.5rem;
-    text-shadow: var(--text-secondary) 0.05rem 0.05rem;
+    text-shadow: var(--accent) 0.05rem 0.05rem;
 }
 
 .featured-header .review-meta {
@@ -196,25 +196,37 @@ a:hover {
     transform: translateY(-3px);
 }
 
-.highlighted-reviews {
-    background: linear-gradient(to bottom left, var(--primary), var(--dark-primary));
-    color: var(--text-light);
-    padding: 2rem;
-    border-top: 2px solid var(--accent);
+.reviews-destacadas {
+    display: flex;
+    justify-content: center;
+    background: var(--light-primary);
+    padding: 3rem 0;
 }
 
-.highlighted-reviews h2 {
+.reviews-box {
+    border-top: 2px solid var(--accent);
+    background: linear-gradient(to bottom left, var(--light-primary), var(--primary));
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 1000px;
+    width: 90%;
+    box-shadow: 0 4px 16px var(--text-secondary);
+    color: var(--text-light);
+}
+
+.reviews-box h2{
     font-family: var(--font-title);
-    font-size: 1.5rem;
+    color: var(--text-primary);
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
-    text-shadow: 0.05rem 0.05rem 0.1rem var(--text-secondary);
+    text-shadow: 0.05rem 0.05rem 0.1rem var(--accent);
 }
 
-.review-grid {
+.reviews-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
     justify-items: center;
 }
 
