@@ -401,6 +401,116 @@ a:hover {
     line-height: 1.4;
     text-shadow: 0.05 rem 0.05rem 0.1rem var(--text-light);
 }
+
+.contact-wrapper {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-card{
+   border-bottom: 2px solid var(--accent);
+    border-top: 2px solid var(--accent);
+    background: linear-gradient(to bottom , var(--light-primary), var(--primary));
+    border-radius: 12px;
+    padding: 2.5rem;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 -4px 12px var(--text-secondary);
+    box-shadow: 0 4px 12px var(--text-secondary);
+    color: var(--text-primary);
+}
+.contact-card h2 {
+    font-family: var(--font-title);
+    color: var(--primary);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1rem;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-control--full {
+    grid-column: 1 / -1;
+}
+
+label{
+    font-weight: 700px;
+    color: var(--primary);
+
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    background: var(--text-light);
+    border: 1px solid var(--divider);
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+input:focus,
+textarea:focus{
+    border-color: var(--accent);
+}
+
+.form-actions{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.btn {
+    min-width: 120px;
+    min-height: 48px;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-send {
+    background: var(--accent);
+    color: var(--text-light);
+}
+
+.btn-send:hover,
+.btn-send:focus {
+    background: var(--primary);
+    box-shadow: 0 10px 24px var(--dark-primary);
+    transform: translateY(-2px);
+}
+
+.btn-reset {
+    background: transparent;
+    color: var(--text-light);
+    border-color: var(--text-light);
+}
+
+.btn-reset:hover,
+.btn-reset:focus {
+    background: var(--light-primary);
+    box-shadow: 0 10px 24px var(--text-primary);
+    transform: translateY(-2px);
+}
+
 @media (max-width: 900px) {
     .featured-grid {
         grid-template-columns: 1fr;

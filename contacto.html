@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game Mechanics - Crítica de Videojuegos</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="header-top">
+                <div class="logo-container">
+                    <img src="media/logo.png" alt="Logotipo de Game Mechanics" class="logo">
+                 <h1>Game Mechanics</h1>
+                </div>
+
+          
+
+                <div class="user-profile">
+                    <a href="perfil.html">
+                        <img src="media/user.png" alt="Perfil de usuario" class="user-icon">
+                    </a>
+                </div>
+            </div>
+                      <nav class="main-nav">
+                <ul>
+                    <li><a href="portada.html">Portada</a></li>
+                    <li><a href="explora.html">Explora</a></li>
+                    <li><a href="opina.html">Opina</a></li>
+                    <li><a href="contacto.html" class="active">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-content contact-wrapper">
+            <section class="contact-card">
+                <header>
+                    <h2>Contáctanos</h2>
+                </header>
+                <form class="contact-form" action="mailto:gfantelli97@gmail.com" method="post" enctype="text/plain">
+                    <fieldset class="form-grid">
+                        <legend class="sr-only">Formulario de contacto</legend>
+                        <div class="form-control">
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" name="Nombre" type="text" placeholder="Tu nombre" required>
+                        </div> <div class="form-control">
+                            <label for="apellidos">Apellidos</label>
+                            <input id="apellidos" name="Apellidos" type="text" placeholder="Tus apellidos" required>
+                        </div>
+                         <div class="form-control">
+                            <label for="edad">Edad</label>
+                            <input id="edad" name="Edad" type="number" min="1" max="100" placeholder="Ej: 28" required>
+                        </div>
+
+                        <div class="form-control form-control--full">
+                            <label for="observaciones">observaciones</label>
+                            <textarea id="observaciones" name="observaciones" rows="5" placeholder="Ayúdanos a mejorar..." required></textarea>
+                        </div>
+                        <div class="form-actions form-control--full">
+                            <button type="submit" class="btn btn-send">Send</button>
+                            <button type="reset" class="btn btn-reset">Reset</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="terminos.html">Terminos de Uso</a>
+                    <a href="faq.html">Preguntas Frecuentes</a>
+                    <a href="privacidad.html">Politica de Privacidad</a>
+                </div>
+
+                <div class="iconos-redes">
+                    <a href="https://www.instagram.com/leomessi" title="Instagram"><img src="media/instagram.png" alt="Instagram"></a>
+                    <a href="https://x.com/GFantelli97" title="X"><img src="media/x.png" alt="X"></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1" title="Youtube"><img src="media/youtube.png" alt="Youtube"></a>
+                </div>
+
+                <p class="footer-copy">Copyright 2025 Game Mechanics. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </body>
+</html>
