@@ -470,6 +470,19 @@ textarea:focus{
     border-color: var(--accent);
 }
 
+select {
+    background: var(--text-light);
+    border: 1px solid var(--divider);
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+select:focus {
+    border-color: var(--accent);
+}
+
 .form-actions{
     display: flex;
     gap: 1rem;
