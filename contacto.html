@@ -30,25 +30,41 @@
                     <li><a href="contacto.html" class="active">Contáctanos</a></li>
                 </ul>
             </nav>
+            <button id="themeToggle" class="btn btn-theme"  type="button" aria-pressed="false">
+                Cambiar tema
+            </button>
         </header>
         <main class="main-content contact-wrapper">
             <section class="contact-card">
                 <header>
                     <h2>Contáctanos</h2>
                 </header>
-                <form class="contact-form" action="mailto:gfantelli97@gmail.com" method="post" enctype="text/plain">
+                <p id="formMessage" class="form-message" aria-live="polite"></p>
+                <form id="contactForm" class="contact-form" action="#" method="post">
                     <fieldset class="form-grid">
                         <legend class="sr-only">Formulario de contacto</legend>
                         <div class="form-control">
                             <label for="nombre">Nombre</label>
                             <input id="nombre" name="Nombre" type="text" placeholder="Tu nombre" required>
-                        </div> <div class="form-control">
+                        </div> 
+                        <div class="form-control">
                             <label for="apellidos">Apellidos</label>
                             <input id="apellidos" name="Apellidos" type="text" placeholder="Tus apellidos" required>
                         </div>
                          <div class="form-control">
                             <label for="edad">Edad</label>
                             <input id="edad" name="Edad" type="number" min="1" max="100" placeholder="Ej: 28" required>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="motivo">Motivo de consulta </label>
+                            <select id="motivo" name="motivo" required>
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="sugerencia">Sugerencia</option>
+                                <option value="error">Reportar error</option>
+                                <option value="reclamo">Reclamo</option>
+                                <option value="otro">Otro</option>
+                            </select>
                         </div>
 
                         <div class="form-control form-control--full">
@@ -81,5 +97,6 @@
                 <p class="footer-copy">Copyright 2025 Game Mechanics. Todos los derechos reservados.</p>
             </div>
         </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>

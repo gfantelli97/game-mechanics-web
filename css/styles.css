@@ -489,7 +489,14 @@ select:focus {
     justify-content: flex-end;
     flex-wrap: wrap;
 }
-
+.form-message{
+    min-height: 1.5rem;
+    margin: 0.75 rem 0 1rem;
+    font-weight: 700;
+}
+.form-message.success{
+    color: var(--accent);
+}
 .btn {
     min-width: 120px;
     min-height: 48px;
@@ -525,7 +532,57 @@ select:focus {
     box-shadow: 0 10px 24px var(--text-primary);
     transform: translateY(-2px);
 }
-/* Tablets */
+.btn-theme {
+    background: transparent;
+    color: var(--text-light);
+    border: 2px solid var(--text-light);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    min-height: 50px;
+}
+.btn-theme:hover,
+.btn-theme:focus {
+    background: var(--light-primary);
+    color: var(--text-primary);
+}
+
+.dark-theme{
+    background-image: none;
+    background-color: #111;
+    color: var(--text-light);
+}
+
+.dark-theme .contact-card,
+.dark-theme .full-review-box,
+.dark-theme .reviews-box,
+.dark-theme .featured-review{
+    background: #1b1b1b;
+    color: var(--text-light);
+}
+
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme p,
+.dark-theme label{
+    color: var(--text-light);
+}
+
+.dark-theme input,
+.dark-theme textarea,
+.dark-theme select{
+    background: #222;
+    color: var(--text-light);
+    border-color: #444;
+}
+.dark-theme .main-nav{
+    background-color: #222;
+}
+.dark-theme .main-footer{
+    background-color: #0d0d0d;
+}
+
+    /* Tablets */
 @media (max-width: 900px) {
     .header-top{
         padding: 1rem 1.25rem;
