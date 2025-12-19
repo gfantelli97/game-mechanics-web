@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visitas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="visitas.xsd">
+
+    <visita>
+        <fecha>2025-12-10</fecha>
+        <hora>09:15</hora>
+        <pagina>Index</pagina>
+        <navegador>Chrome</navegador>
+        <duracion>120</duracion>
+    </visita>
+
+    <visita>
+        <fecha>2025-12-10</fecha>
+        <hora>10:30</hora>
+        <pagina>Contacto</pagina>
+        <navegador>Firefox</navegador>
+        <duracion>90</duracion>
+    </visita>
+
+    <visita>
+        <fecha>2025-12-11</fecha>
+        <hora>14:45</hora>
+        <pagina>Index</pagina>
+        <navegador>Edge</navegador>
+        <duracion>150</duracion>
+    </visita>
+
+    <visita>
+        <fecha>2025-12-11</fecha>
+        <hora>16:00</hora>
+        <pagina>Analisis</pagina>
+        <navegador>Safari</navegador>
+        <duracion>80</duracion>
+    </visita>
+
+    <visita>
+        <fecha>2025-12-12</fecha>
+        <hora>11:20</hora>
+        <pagina>Index</pagina>
+        <navegador>Chrome</navegador>
+        <duracion>110</duracion>
+    </visita>
+
+    </visitas> 
