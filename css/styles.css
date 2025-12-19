@@ -512,27 +512,104 @@ textarea:focus{
     box-shadow: 0 10px 24px var(--text-primary);
     transform: translateY(-2px);
 }
-
+/* Tablets */
 @media (max-width: 900px) {
+    .header-top{
+        padding: 1rem 1.25rem;
+    }
+    .logo-container h1{
+        font-size: 1.5rem;
+    }
+
     .featured-grid {
         grid-template-columns: 1fr;
     }
-}
-.trailer-video iframe {
-    height: 250px;
-}
-.featured-review {
-    padding: 1.5rem;
-}
-
-.featured-header h2 {
+    .trailer-video iframe {
+        height: 280px;
+    }
+    .featured-review {
+        margin: 1.25rem auto;
+        padding: 1.5rem;
+    }
+    .featured-header h2 {
     font-size: 1.5rem;
+    }
+    .reviews-grid{
+        grid-template-columns: 1fr;
+    }
+    .review-bottom{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    .reviewer-profile{
+        gap: 1rem;
+    }
 }
+/* Móvil */
 @media (max-width: 600px){
+    .header-top{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .logo-container{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+    .logo-container h1{
+        font-size: 1.4rem;
+    }
+    .user-profile{
+        align-self: flex-end;
+    }
+    .main-nav ul{
+        flex-wrap: wrap;
+        gap: 0.7rem 1rem;
+        padding: 0.7rem 1rem;
+        justify-content: center;
+    }
+    .main-nav a{
+        font-size: 1rem;
+    }
+    .featured-review{
+        padding: 1.25rem;
+        border-radius: 10px;
+    }
+    .featured-header h2{
+        font-size: 1.4rem;
+    }
+    .trailer-video iframe{
+        height: 220px;
+    }
+    .reviews-box{
+        padding: 1.25rem;
+    }
     .review-card img{
         height: 160px;
     }
-    .highlighted-reviews {
+    .full-review-box{
         padding: 1.5rem;
+    }
+    .score{
+        width: 95px;
+    }
+    .reviewer-profile img{
+        width: 90px;
+        height: 90px;
+    }
+    .form-grid{
+        grid-template-columns: 1fr;
+    }
+    .form-actions{
+        justify-content: stretch;
+    }
+    .btn{
+        width:100%;
+        min-width: 0;
     }
 }
