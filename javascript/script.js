@@ -14,8 +14,8 @@ if (form) {
 
         const nombre = document.getElementById("nombre")?.value.trim() || "";
 
-        formMessage.textContent = `Gracias${nombre ? ', ' + nombre : ""}! Hemos recibido tu consulta. ';
-        formMessage.classList.add("is-success");
+        formMessage.textContent = `Gracias${nombre ? ", " + nombre : ""}! Hemos recibido tu consulta. `;
+        formMessage.classList.add("success");
         form.reset();
     });
 }
@@ -28,4 +28,4 @@ if (themeToggle) {
             const isDark = document.body.classList.contains("dark-theme");
             themeToggle.setAttribute("aria-pressed", String(isDark));
         });
-}
+}   

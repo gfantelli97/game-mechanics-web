@@ -129,6 +129,15 @@ a:hover {
 .main-nav a.active {
     color: var(--accent);
 }
+
+.theme-bar{
+    background-color: var(--primary);
+    border-top: 2px solid var(--accent);
+    padding: 0.75rem 0.75rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 /* Sección Principal con Último Análisis creado. Incluye Grid y Linear-Gradient */
 .featured-review {
     background: linear-gradient(to bottom right, var(--primary), var(--light-primary));
@@ -536,9 +545,6 @@ select:focus {
     background: transparent;
     color: var(--text-light);
     border: 2px solid var(--text-light);
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    min-height: 50px;
 }
 .btn-theme:hover,
 .btn-theme:focus {
@@ -552,6 +558,27 @@ select:focus {
     color: var(--text-light);
 }
 
+.dark-theme .main-header{
+    background: linear-gradient(to bottom, #333, #555);
+}
+
+.dark-theme .main-nav{
+    background-color: #222;
+    border-color: var(--accent);
+}
+.dark-theme .main-nav a{
+    color: var(--text-light);
+}
+.dark-theme .main-nav a:hover,
+.dark-theme .main-nav a.active {
+    color: var(--accent);
+}
+
+.dark-theme .theme-bar{
+    background-color: #222;
+    border-color: 2px solid var(--accent);
+}
+.dark-theme .review-card,
 .dark-theme .contact-card,
 .dark-theme .full-review-box,
 .dark-theme .reviews-box,
@@ -560,11 +587,19 @@ select:focus {
     color: var(--text-light);
 }
 
+.dark-theme .rev img{
+    filter: brightness(0.9);
+}
+
 .dark-theme h1,
 .dark-theme h2,
 .dark-theme h3,
+.dark-theme h4,
+.dark-theme h5,
+.dark-theme h6,
 .dark-theme p,
-.dark-theme label{
+.dark-theme label,
+.dark-theme figcaption{
     color: var(--text-light);
 }
 
@@ -575,9 +610,7 @@ select:focus {
     color: var(--text-light);
     border-color: #444;
 }
-.dark-theme .main-nav{
-    background-color: #222;
-}
+
 .dark-theme .main-footer{
     background-color: #0d0d0d;
 }
